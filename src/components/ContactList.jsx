@@ -5,7 +5,6 @@ import ShowContact from "./ShowContact";
 import { useEffect, useState } from "react";
 import { ContactService } from "../services/ContactService";
 import Spinnar from "./Spinnar";
-import { useParams } from "react-router-dom";
 
 const ContactList = () => {
   const [state, setState] = useState({
