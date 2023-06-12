@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Switch,
   Navigate,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -13,7 +14,7 @@ import AddContacts from "./components/AddContacts";
 function App() {
   return (
     <>
-      <Router>
+      <Switch>
         <Navbar />
 
         <Routes>
@@ -26,7 +27,7 @@ function App() {
           />
           <Route path="/contacts/add" element={<AddContacts />} />
         </Routes>
-      </Router>
+      </Switch>
     </>
   );
 }
